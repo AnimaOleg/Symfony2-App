@@ -1,0 +1,14 @@
+{# app/Resources/views/form/emailTemplate.html.twig #}
+
+{% extends 'base.html.twig' %}
+{% block body %}
+
+	{{form_start(form)}}
+		{{ form_errors(form) }}
+		
+		<h2>emailTemplate.</h2>
+
+		{{ form_widget(form) }}
+	{{form_end(form)}}
+	
+{% endblock %}

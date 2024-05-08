@@ -1,0 +1,10 @@
+{# app/Resources/views/form/formTemplate.html.twig #}
+
+
+{% extends 'base.html.twig' %}
+{% block body %}
+	{{ form_start(form, {'attr': {'class': 'my-form-class'} }) }}
+		{{ form_errors(form) }}
+		{{ form_widget(form) }}
+	{{ form_end(form) }}
+{% endblock %}

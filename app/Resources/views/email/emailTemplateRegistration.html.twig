@@ -1,0 +1,36 @@
+{# app/Resources/views/form/emailTemplate.html.twig #}
+
+{% extends 'base.html.twig' %}
+{% block body %}
+	{#
+	{{form_start(form)}}
+		{{ form_errors(form) }}
+	#}
+	
+		<h2>emailTemplateRegistration.</h2>
+		
+		Reply NAME: {{ name }}
+		
+		{# app/Resources/views/Emails/registration.html.twig #}
+		<h3>You did it! You registered!</h3>
+
+		Hi {{ name }}! You're successfully registered.
+
+		{# example, assuming you have a route named "login" #}
+
+		Thanks!
+
+		{# Makes an absolute URL to the /images/logo.png file #}
+		<img src="{{ asset('images/logo.png') }}" alt="Logo!" />
+		
+		
+	{#
+		{{ form_widget(form) }}
+	{{form_end(form)}}
+	#}
+	
+{% endblock %}
+
+
+
+

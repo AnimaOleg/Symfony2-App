@@ -1,0 +1,30 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+
+formTemplateController:
+    path:    /formTemplateController
+    defaults:    { _controller: AppBundle:formTemplate:new }
+
+admin_post_show:
+    path:    /formTemplateController/admin_post_show
+    defaults:    { _controller: AppBundle:formTemplate:show }
+
+admin_post_editar:
+    path:    /formTemplateController/admin_post_editar
+    defaults:    { _controller: AppBundle:formTemplate:editar }
+
+admin_post_update:
+    path:    /formTemplateController/admin_post_update
+    defaults:    { _controller: AppBundle:formTemplate:update }
+
+
+
+email_post_index:
+    path:    /emailController
+    defaults:    { _controller: AppBundle:email:index }
+
+email_post_send:
+    path:    /emailController/email_post_send
+    defaults:    { _controller: AppBundle:email:send }
